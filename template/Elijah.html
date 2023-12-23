@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Elijah Demo</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="Elijah_files/css2.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="Elijah_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Elijah_files/tocbot.css">
+    <link rel="stylesheet" type="text/css" href="Elijah_files/style.css">
+
+    <style>
+        :root {
+            --theme-color: #ff0000;
+            --theme-shadow-color: #ff00001f;
+            --header-logo-color: #000;
+            --header-bg: #f6f6f6;
+            --header-color: #1e2633;
+            --heading-color: #1e2633;
+            --hero-button: #1e2633;
+            --section-padding-lg: 100px 0;
+            --section-padding-md: 75px 0;
+            --section-padding-sm: 45px 0;
+            --body-font: 'Inter', sans-serif;
+            --heading-font: 'Nunito', sans-serif;
+        }
+        @media only screen and (max-width: 767px) {
+            :root {
+                --section-padding-lg: 75px 0;
+            }
+        }
+    </style>
+
+    <style>
+        .gh-toc > .toc-list {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .gh-toc .is-active-link::before {
+            background-color: var(--ghost-accent-color); /* Defines TOC accent color based on Accent color set in Ghost Admin */
+        } 
+</style>
+
+    <meta name="description" content="Thoughts, stories and ideas.">
+    <link rel="canonical" href="https://elijah.softhopper.studio/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="https://elijah.softhopper.studio/page/2/">
+    
+    <meta property="og:site_name" content="Elijah Demo">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Elijah Demo">
+    <meta property="og:description" content="Thoughts, stories and ideas.">
+    <meta property="og:url" content="https://elijah.softhopper.studio/">
+    <meta property="og:image" content="https://elijah.softhopper.studio/content/images/2023/01/global-cover.webp">
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elijah Demo">
+    <meta name="twitter:description" content="Thoughts, stories and ideas.">
+    <meta name="twitter:url" content="https://elijah.softhopper.studio/">
+    <meta name="twitter:image" content="https://elijah.softhopper.studio/content/images/2023/01/global-cover.webp">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="864">
+    <meta property="og:image:height" content="876">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Elijah Demo",
+        "url": "https://elijah.softhopper.studio/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://elijah.softhopper.studio/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "url": "https://elijah.softhopper.studio/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://elijah.softhopper.studio/content/images/2023/01/global-cover.webp",
+        "width": 864,
+        "height": 876
+    },
+    "mainEntityOfPage": "https://elijah.softhopper.studio/",
+    "description": "Thoughts, stories and ideas."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.59">
+    <link rel="alternate" type="application/rss+xml" title="Elijah Demo" href="https://elijah.softhopper.studio/rss/">
+    <script defer="defer" src="Elijah_files/portal.min.js" data-i18n="false" data-ghost="https://elijah.softhopper.studio/" data-key="4c86fee550f6b32125d4c599ac" data-api="https://elijah.softhopper.studio/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><script async="" src="Elijah_files/Untitled"></script>
+    <script defer="defer" src="Elijah_files/sodo-search.min.js" data-key="4c86fee550f6b32125d4c599ac" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://elijah.softhopper.studio/" crossorigin="anonymous"></script>
+    
+    <link href="https://elijah.softhopper.studio/webmentions/receive/" rel="webmention">
+    <script defer="defer" src="Elijah_files/cards.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Elijah_files/cards.min.css">
+    <script defer="defer" src="Elijah_files/comment-counts.min.js" data-ghost-comments-counts-api="https://elijah.softhopper.studio/members/api/comments/counts/"></script>
+    <script defer="defer" src="Elijah_files/member-attribution.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async="" src="Elijah_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VSBVTGYFN3');
+    
+  var contentApiKey = 'c7599605715b5f5a7fe64afa44';
+</script><style>:root {--ghost-accent-color: #ff0000;}</style>
+
+<style class="fslightbox-styles">.fslightbox-absoluted{position:absolute;top:0;left:0}.fslightbox-fade-in{animation:fslightbox-fade-in .3s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out{animation:fslightbox-fade-out .3s ease}.fslightbox-fade-in-strong{animation:fslightbox-fade-in-strong .3s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out-strong{animation:fslightbox-fade-out-strong .3s ease}@keyframes fslightbox-fade-in{from{opacity:.65}to{opacity:1}}@keyframes fslightbox-fade-out{from{opacity:.35}to{opacity:0}}@keyframes fslightbox-fade-in-strong{from{opacity:.3}to{opacity:1}}@keyframes fslightbox-fade-out-strong{from{opacity:1}to{opacity:0}}.fslightbox-cursor-grabbing{cursor:grabbing}.fslightbox-full-dimension{width:100%;height:100%}.fslightbox-open{overflow:hidden;height:100%}.fslightbox-flex-centered{display:flex;justify-content:center;align-items:center}.fslightbox-opacity-0{opacity:0!important}.fslightbox-opacity-1{opacity:1!important}.fslightbox-scrollbarfix{padding-right:17px}.fslightbox-transform-transition{transition:transform .3s}.fslightbox-container{font-family:Arial,sans-serif;position:fixed;top:0;left:0;background:linear-gradient(rgba(30,30,30,.9),#000 1810%);touch-action:pinch-zoom;z-index:1000000000;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}.fslightbox-container *{box-sizing:border-box}.fslightbox-svg-path{transition:fill .15s ease;fill:#ddd}.fslightbox-nav{height:45px;width:100%;position:absolute;top:0;left:0}.fslightbox-slide-number-container{display:flex;justify-content:center;align-items:center;position:relative;height:100%;font-size:15px;color:#d7d7d7;z-index:0;max-width:55px;text-align:left}.fslightbox-slide-number-container .fslightbox-flex-centered{height:100%}.fslightbox-slash{display:block;margin:0 5px;width:1px;height:12px;transform:rotate(15deg);background:#fff}.fslightbox-toolbar{position:absolute;z-index:3;right:0;top:0;height:100%;display:flex;background:rgba(35,35,35,.65)}.fslightbox-toolbar-button{height:100%;width:45px;cursor:pointer}.fslightbox-toolbar-button:hover .fslightbox-svg-path{fill:#fff}.fslightbox-slide-btn-container{display:flex;align-items:center;padding:12px 12px 12px 6px;position:absolute;top:50%;cursor:pointer;z-index:3;transform:translateY(-50%)}@media (min-width:476px){.fslightbox-slide-btn-container{padding:22px 22px 22px 6px}}@media (min-width:768px){.fslightbox-slide-btn-container{padding:30px 30px 30px 6px}}.fslightbox-slide-btn-container:hover .fslightbox-svg-path{fill:#f1f1f1}.fslightbox-slide-btn{padding:9px;font-size:26px;background:rgba(35,35,35,.65)}@media (min-width:768px){.fslightbox-slide-btn{padding:10px}}@media (min-width:1600px){.fslightbox-slide-btn{padding:11px}}.fslightbox-slide-btn-container-previous{left:0}@media (max-width:475.99px){.fslightbox-slide-btn-container-previous{padding-left:3px}}.fslightbox-slide-btn-container-next{right:0;padding-left:12px;padding-right:3px}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-left:22px}}@media (min-width:768px){.fslightbox-slide-btn-container-next{padding-left:30px}}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-right:6px}}.fslightbox-down-event-detector{position:absolute;z-index:1}.fslightbox-slide-swiping-hoverer{z-index:4}.fslightbox-invalid-file-wrapper{font-size:22px;color:#eaebeb;margin:auto}.fslightbox-video{object-fit:cover}.fslightbox-youtube-iframe{border:0}.fslightboxl{display:block;margin:auto;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:67px;height:67px}.fslightboxl div{box-sizing:border-box;display:block;position:absolute;width:54px;height:54px;margin:6px;border:5px solid;border-color:#999 transparent transparent transparent;border-radius:50%;animation:fslightboxl 1.2s cubic-bezier(.5,0,.5,1) infinite}.fslightboxl div:nth-child(1){animation-delay:-.45s}.fslightboxl div:nth-child(2){animation-delay:-.3s}.fslightboxl div:nth-child(3){animation-delay:-.15s}@keyframes fslightboxl{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.fslightbox-source{position:relative;z-index:2;opacity:0}</style><style>.gh-portal-account-header{display:flex;flex-direction:column;align-items:center;margin:0 0 32px}.gh-portal-account-header .gh-portal-avatar{margin:6px 0 8px!important}.gh-portal-account-data{margin-bottom:40px}footer.gh-portal-account-footer{display:flex}.gh-portal-account-footer.paid{margin-top:12px}.gh-portal-account-footermenu{display:flex;align-items:center;list-style:none;padding:0;margin:0}.gh-portal-account-footerright{display:flex;flex-grow:1;align-items:center;justify-content:flex-end}.gh-portal-account-footermenu li{margin-right:16px}.gh-portal-account-footermenu li:last-of-type{margin-right:0}.gh-portal-freeaccount-newsletter{display:flex;align-items:center;justify-content:space-between;margin-top:24px}.gh-portal-freeaccount-newsletter .label{display:flex;flex-direction:column;flex-grow:1}.gh-portal-free-ctatext{margin-top:-12px}.gh-portal-cancelcontinue-container{margin:24px 0 32px}.gh-portal-list-detail .gh-portal-email-notice{display:flex;align-items:center;gap:5px;margin-top:6px;color:var(--red);font-weight:500;font-size:1.25rem;letter-spacing:.2px}.gh-portal-email-notice-icon{width:20px;height:20px}.gh-portal-billing-button-loader{width:32px;height:32px;margin-right:-3px;opacity:.6}.gh-portal-product-icon{width:52px;margin-right:12px;border-radius:2px}.gh-portal-account-discountcontainer{position:relative;display:flex;align-items:center}.gh-portal-account-old-price{text-decoration:line-through;color:var(--grey9)!important}.gh-portal-account-tagicon{width:16px;height:16px;color:var(--brandcolor);margin-right:5px;z-index:999}@media (max-width: 390px){.gh-portal-account-footer{padding:0!important}}@media (max-width: 340px){.gh-portal-account-footer{padding:0!important;flex-wrap:wrap;gap:12px}.gh-portal-account-footer .gh-portal-account-footerright{justify-content:flex-start}}.gh-email-suppressed-page-title{margin-bottom:14px}.gh-email-suppressed-page-icon{display:block;width:38px;height:38px;margin:0 auto 18px}.gh-email-suppressed-page-text{padding:0 14px;text-align:center;color:var(--grey6)}.gh-email-faq-footer-text{color:var(--grey8)}.gh-portal-list-detail.email-newsletter .gh-email-faq-page-button{display:block;margin-top:3px}.accountEmail .gh-email-faq-page-button{margin-left:4px}.emailReceivingFAQ .gh-portal-btn-back,.emailReceivingFAQ .gh-portal-btn-back:hover{left:calc(6vmin - 14px)}.emailReceivingFAQ .gh-portal-closeicon-container{right:calc(6vmin - 20px)}@media (max-width: 480px){.emailReceivingFAQ .gh-portal-btn-back,.emailReceivingFAQ .gh-portal-btn-back:hover{left:16px}.emailReceivingFAQ .gh-portal-closeicon-container{right:24px}}.gh-email-faq-page-button{color:var(--brandcolor);cursor:pointer;background:none;transition:color linear .1s;font-size:1.45rem}</style><style>.App{text-align:center}.App-logo{height:40vmin;pointer-events:none}@media (prefers-reduced-motion: no-preference){.App-logo{animation:App-logo-spin infinite 20s linear}}.App-header{background-color:#282c34;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:calc(10px + 2vmin);color:#fff}.App-link{color:#61dafb}@keyframes App-logo-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body class="home-template default-layout">
+    <div class="site-content">
+        
+<header class="site-header sticky">
+	<div class="header-top-area">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-6 col-lg-9">
+					<div class="d-flex align-items-center">
+						<div class="header-logo-area">
+	<div class="desktop-logo d-lg-block">
+		<div class="site-branding">
+				<a href="https://elijah.softhopper.studio/">
+						<img src="Elijah_files/light-logo.webp" alt="Elijah Demo" class="dark-logo" width="135" height="35">
+					<img src="Elijah_files/logo.webp" alt="Elijah Demo" class="white-logo" width="135" height="35">
+				</a>
+		</div><!-- /.site-branding -->		
+	</div>
+</div><!-- /.header-logo-area --> 
+						<nav class="navigation ms-4">
+	<div class="menu-wrapper">
+		<div class="menu-content">
+			<div class="mainmenu d-flex align-items-center">					
+					
+<div class="elijah-nav-wrapper"> 
+    <ul class="nav desktop-nav">
+        <!-- Loop through the navigation items -->
+        <li class="nav-style-guides"><a href="https://elijah.softhopper.studio/style-guide/">Style Guides</a></li>
+        <li class="nav-features"><a href="https://elijah.softhopper.studio/features/">Features</a></li>
+        <li class="nav-membership"><a href="https://elijah.softhopper.studio/membership/">Membership</a></li>
+        <li class="nav-tags"><a href="https://elijah.softhopper.studio/tags/">Tags</a></li>
+        <!-- End the loop -->
+
+        <li class="more-nav-elements">
+            <a href="#" class="more-btn">
+                <svg role="img" viewBox="0 0 20 4" xmlns="http://www.w3.org/2000/svg"><path d="M2 4A2 2 0 102.001.001 2 2 0 002 4zm8 0a2 2 0 10.001-3.999A2 2 0 0010 4zm8 0a2 2 0 10.001-3.999A2 2 0 0018 4z"></path></svg>
+            </a>
+            <ul class="auto-nav-more-list">
+                    <li class="nav-authors"><a href="https://elijah.softhopper.studio/authors/">Authors</a></li>
+                    <li class="nav-subscribe"><a href="https://elijah.softhopper.studio/subscribe/">Subscribe</a></li>
+                    <li class="nav-post-layout-i"><a href="https://elijah.softhopper.studio/boxed-water-partners-with-to-consumer-creativity/">Post Layout I</a></li>
+                    <li class="nav-post-layout-i-no-toc"><a href="https://elijah.softhopper.studio/the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around/">Post Layout I No Toc</a></li>
+                    <li class="nav-post-layout-ii"><a href="https://elijah.softhopper.studio/how-to-make-one-line-art-designs/">Post Layout II</a></li>
+                    <li class="nav-post-layout-ii-no-toc"><a href="https://elijah.softhopper.studio/brand-is-just-a-perception-and-will-match-reality-over-time/">Post Layout II No Toc</a></li>
+                    <li class="nav-post-layout-iii"><a href="https://elijah.softhopper.studio/15-unheard-ways-to-achieve-greater-walker/">Post Layout III</a></li>
+                    <li class="nav-post-layout-iii-no-toc"><a href="https://elijah.softhopper.studio/your-light-is-about-to-stop-being-relevant/">Post Layout III No Toc</a></li>
+                    <li class="nav-discuss-comment"><a href="https://elijah.softhopper.studio/boxed-water-partners-with-to-consumer-creativity/">Discuss Comment</a></li>
+                    <li class="nav-404-error"><a href="https://elijah.softhopper.studio/404/">404 Error</a></li>
+                    <li class="nav-error-page"><a href="https://elijah.softhopper.studio/404/?layout=505">Error Page</a></li>
+                    <li class="nav-documentation"><a href="https://softhopper.studio/ghost/elijah/">Documentation</a></li>
+            </ul>
+      </li>
+    </ul>
+
+    <div class="mobile-sidebar-menu sidebar-menu">
+		<div class="overlaybg"></div>
+        <div class="offcanvas">
+            <div class="navigation">
+                <ul class="mainmenu">
+                        <li class="nav-style-guides"><a href="https://elijah.softhopper.studio/style-guide/">Style Guides</a></li>
+                        <li class="nav-features"><a href="https://elijah.softhopper.studio/features/">Features</a></li>
+                        <li class="nav-membership"><a href="https://elijah.softhopper.studio/membership/">Membership</a></li>
+                        <li class="nav-tags"><a href="https://elijah.softhopper.studio/tags/">Tags</a></li>
+                        <li class="nav-authors"><a href="https://elijah.softhopper.studio/authors/">Authors</a></li>
+                        <li class="nav-subscribe"><a href="https://elijah.softhopper.studio/subscribe/">Subscribe</a></li>
+                        <li class="nav-post-layout-i"><a href="https://elijah.softhopper.studio/boxed-water-partners-with-to-consumer-creativity/">Post Layout I</a></li>
+                        <li class="nav-post-layout-i-no-toc"><a href="https://elijah.softhopper.studio/the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around/">Post Layout I No Toc</a></li>
+                        <li class="nav-post-layout-ii"><a href="https://elijah.softhopper.studio/how-to-make-one-line-art-designs/">Post Layout II</a></li>
+                        <li class="nav-post-layout-ii-no-toc"><a href="https://elijah.softhopper.studio/brand-is-just-a-perception-and-will-match-reality-over-time/">Post Layout II No Toc</a></li>
+                        <li class="nav-post-layout-iii"><a href="https://elijah.softhopper.studio/15-unheard-ways-to-achieve-greater-walker/">Post Layout III</a></li>
+                        <li class="nav-post-layout-iii-no-toc"><a href="https://elijah.softhopper.studio/your-light-is-about-to-stop-being-relevant/">Post Layout III No Toc</a></li>
+                        <li class="nav-discuss-comment"><a href="https://elijah.softhopper.studio/boxed-water-partners-with-to-consumer-creativity/">Discuss Comment</a></li>
+                        <li class="nav-404-error"><a href="https://elijah.softhopper.studio/404/">404 Error</a></li>
+                        <li class="nav-error-page"><a href="https://elijah.softhopper.studio/404/?layout=505">Error Page</a></li>
+                        <li class="nav-documentation"><a href="https://softhopper.studio/ghost/elijah/">Documentation</a></li>
+                    
+                                    
+                    <li class="nav-signin">
+                                <a href="#/portal/signin" data-portal="signin" class="gh-portal-close">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+</div>
+			</div>
+		</div> <!-- /.hours-content-->
+	</div><!-- /.menu-wrapper -->
+</nav> 
+					</div>
+				</div>
+				
+				<div class="col-6 col-lg-3">
+					<div class="d-flex justify-content-end align-items-center">
+    
+        <a href="#" class="search-bar search-elements">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>        </a>
+
+    <a href="#" class="switcher">
+            <div class="light">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="none" d="M0 0h24v24H0z"></path><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"></path>
+</svg>            </div>
+            <div class="dark">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Zm0-8c-1.65,0-3,1.35-3,3s1.35,3,3,3,3-1.35,3-3-1.35-3-3-3Zm1-5V1c0-.55-.45-1-1-1s-1,.45-1,1v3c0,.55,.45,1,1,1s1-.45,1-1Zm0,19v-3c0-.55-.45-1-1-1s-1,.45-1,1v3c0,.55,.45,1,1,1s1-.45,1-1ZM5,12c0-.55-.45-1-1-1H1c-.55,0-1,.45-1,1s.45,1,1,1h3c.55,0,1-.45,1-1Zm19,0c0-.55-.45-1-1-1h-3c-.55,0-1,.45-1,1s.45,1,1,1h3c.55,0,1-.45,1-1ZM6.71,6.71c.39-.39,.39-1.02,0-1.41l-2-2c-.39-.39-1.02-.39-1.41,0s-.39,1.02,0,1.41l2,2c.2,.2,.45,.29,.71,.29s.51-.1,.71-.29Zm14,14c.39-.39,.39-1.02,0-1.41l-2-2c-.39-.39-1.02-.39-1.41,0s-.39,1.02,0,1.41l2,2c.2,.2,.45,.29,.71,.29s.51-.1,.71-.29Zm-16,0l2-2c.39-.39,.39-1.02,0-1.41s-1.02-.39-1.41,0l-2,2c-.39,.39-.39,1.02,0,1.41,.2,.2,.45,.29,.71,.29s.51-.1,.71-.29ZM18.71,6.71l2-2c.39-.39,.39-1.02,0-1.41s-1.02-.39-1.41,0l-2,2c-.39,.39-.39,1.02,0,1.41,.2,.2,.45,.29,.71,.29s.51-.1,.71-.29Z"></path></svg>
+            </div>
+    </a>
+
+    <div class="header-right-area">
+        <div class="hamburger-menus">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+            <a class="gh-head-button button d-none d-lg-block ms-3" href="https://elijah.softhopper.studio/signin">Sign In</a>
+</div> 
+				</div>
+			</div>
+		</div>
+	</div><!-- /.header-top-area -->
+</header>
+<div class="overlaybg"></div>
+		<section class="hero-banner">
+    <div class="container">
+        <h1 class="hero-title" id="hero-title">In depth <span></span> resource on UI, UX and everything <span></span> in <span></span> between.</h1>
+        <div class="row">
+            <div class="col-lg-7">
+                <p class="hero-subscribe-title" id="hero-subscribe-title">Get the email newsletter and unlock access to members-only content and updates Elijah is a modern classic blog theme for Ghost.</p>
+            </div>
+            <div class="col-lg-5">
+                <form class="dv-form" data-members-form="subscribe">
+    <div class="input-group">
+        <input class="subscribe-email form-control" data-members-email="" placeholder="Email Address" type="email">
+        <button class="subscribe-btn" type="submit">
+            Subscribe
+        </button>
+    </div>
+    <div class="message-success">
+        Great! Check your inbox and click the link to confirm your subscription.
+    </div>
+    <div class="message-error">
+        Please enter a valid email address!
+    </div>
+</form>            </div>
+        </div>
+    </div>
+</section>
+			<section class="featured-posts">
+		<div class="container-fluid">
+			<div class="row gx-5">
+					<div class="col-md-4">
+    <article class="post tag-lifestyle tag-idea tag-story featured image-bg">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/5-easy-ways-you-can-turn-future-into-success/">
+                <img class="post-card-image" src="Elijah_files/photo-1661956600654-edac218fea67.jpg" loading="lazy" alt="5 Easy Ways You Can Turn Future Into Success" width="416" height="416">
+            </a>
+            <div class="entry-user">
+                <div class="thumb">
+                    <a href="https://elijah.softhopper.studio/author/iandooley/" class="static-avatar">
+                        <img class="author-profile-image" src="Elijah_files/author-4.webp" alt="Ian Dooley" width="36" height="36">
+                    </a>
+                </div>
+                <div class="thumb">
+                    <a href="https://elijah.softhopper.studio/author/logan/" class="static-avatar">
+                        <img class="author-profile-image" src="Elijah_files/author-5.webp" alt="Logan Weaver" width="36" height="36">
+                    </a>
+                </div>
+                <span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+                <span class="loop-reading-time">4 min read</span>
+            </div>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+                    
+                <a href="https://elijah.softhopper.studio/tag/lifestyle/">Lifestyle</a> <a href="https://elijah.softhopper.studio/tag/idea/">Idea</a> <a href="https://elijah.softhopper.studio/tag/story/">Story</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/5-easy-ways-you-can-turn-future-into-success/">
+                    5 Easy Ways You Can Turn Future Into Success
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+					<div class="col-md-4">
+    <article class="post tag-fashion tag-creative featured image-bg">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/want-to-have-a-more-appealing-tattoo/">
+                <img class="post-card-image" src="Elijah_files/photo-1612294472104-0334c80111f1.jpg" loading="lazy" alt="Want To Have A More Appealing Tattoo?" width="416" height="416">
+            </a>
+            <div class="entry-user">
+                <div class="thumb">
+                    <a href="https://elijah.softhopper.studio/author/william/" class="static-avatar">
+                        <img class="author-profile-image" src="Elijah_files/author-2.webp" alt="William Smith" width="36" height="36">
+                    </a>
+                </div>
+                <div class="thumb">
+                    <a href="https://elijah.softhopper.studio/author/iandooley/" class="static-avatar">
+                        <img class="author-profile-image" src="Elijah_files/author-4.webp" alt="Ian Dooley" width="36" height="36">
+                    </a>
+                </div>
+                <span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+                <span class="loop-reading-time">1 min read</span>
+            </div>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+                    <span class="visibility-badge">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.445 9.333V6.667C5.445 2.985 8.38 0 12 0c3.62 0 6.554 2.985 6.554 6.667v2.666s2.622 1.214 2.622 6c0 4.787-3.815 8.667-8.52 8.667h-1.312c-4.706 0-8.52-3.88-8.52-8.667 0-4.786 2.621-6 2.621-6zm10.487 0V6.667c0-2.21-1.76-4-3.932-4-2.172 0-3.933 1.79-3.933 4v2.666h7.865z"></path></svg>
+    </span>
+                <a href="https://elijah.softhopper.studio/tag/fashion/">Fashion</a> <a href="https://elijah.softhopper.studio/tag/creative/">Creative</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/want-to-have-a-more-appealing-tattoo/">
+                    Want To Have A More Appealing Tattoo?
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+					<div class="col-md-4">
+    <article class="post tag-idea tag-review tag-design featured image-bg">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/brand-is-just-a-perception-and-will-match-reality-over-time/">
+                <img class="post-card-image" src="Elijah_files/photo-1661956602153-23384936a1d3.jpg" loading="lazy" alt="Brand is just a perception, and will match reality over time" width="416" height="416">
+            </a>
+            <div class="entry-user">
+                <div class="thumb">
+                    <a href="https://elijah.softhopper.studio/author/james/" class="static-avatar">
+                        <img class="author-profile-image" src="Elijah_files/author-6.webp" alt="James Barr" width="36" height="36">
+                    </a>
+                </div>
+                <span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+                <span class="loop-reading-time">3 min read</span>
+            </div>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+                    
+                <a href="https://elijah.softhopper.studio/tag/idea/">Idea</a> <a href="https://elijah.softhopper.studio/tag/review/">Review</a> <a href="https://elijah.softhopper.studio/tag/design/">Design</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/brand-is-just-a-perception-and-will-match-reality-over-time/">
+                    Brand is just a perception, and will match reality over time
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+			</div>
+		</div>
+	</section>
+
+		<section class="top-tags">
+    <div class="container-xxl">
+        <div class="row mrb--30">
+            <div class="popular-tags col-lg-2 justify-content-center">
+                <div class="tag-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.557,7.153L15.318,.964C14.547,.232,13.5-.105,12.447,.03L5.821,.905c-.821,.109-1.399,.862-1.291,1.684,.108,.822,.867,1.402,1.684,1.291l6.626-.875c.15-.02,.301,.028,.388,.112l6.201,6.152c.757,.773,.756,2.03,.007,2.793l-.512,.512c-.113-.145-.236-.285-.367-.419l-6.238-6.189c-.771-.732-1.819-1.07-2.871-.935l-6.626,.875c-.701,.093-1.242,.663-1.299,1.368l-.511,6.396c-.086,1.059,.307,2.086,1.054,2.795l6.086,6.035c.947,.967,2.214,1.5,3.567,1.501h.005c1.352,0,2.617-.53,3.564-1.494l3.278-3.333c.927-.944,1.401-2.178,1.421-3.421l1.579-1.579c1.896-1.929,1.898-5.072-.01-7.02Zm-5.13,9.917l-3.277,3.333c-.379,.386-.887,.598-1.428,.598-.542,0-1.049-.214-1.442-.616l-6.124-6.072c-.109-.104-.166-.25-.153-.402l.414-5.189,5.424-.716c.148-.024,.301,.028,.388,.112l6.201,6.152c.757,.773,.756,2.03-.002,2.802Zm-7.427-5.57c-.034,1.972-2.967,1.971-3,0,.034-1.972,2.967-1.971,3,0Z"></path></svg>                    <h5>Popular Tags</h5>
+                </div>
+            </div>
+                        <div class="popular-tags col-md-4 col-lg-3">
+                            <div class="tag-thumb">
+                                <a href="https://elijah.softhopper.studio/tag/idea/">
+                                    <img class="lazy" src="Elijah_files/tag_6.webp" alt="" width="75" height="75">
+                                </a>
+                            </div>
+                            <div class="tags-card-footer">
+                                <div class="tags-posts-meta">
+                                    <a href="https://elijah.softhopper.studio/tag/idea/">
+                                        <h4 class="tags-name">Idea</h4>
+                                        <p class="tags-desc">13 posts</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tag-url">
+                                <a href="https://elijah.softhopper.studio/tag/idea/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
+                            </div>
+                        </div>
+                        <div class="popular-tags col-md-4 col-lg-3">
+                            <div class="tag-thumb">
+                                <a href="https://elijah.softhopper.studio/tag/business/">
+                                    <img class="lazy" src="Elijah_files/tag_3.webp" alt="" width="75" height="75">
+                                </a>
+                            </div>
+                            <div class="tags-card-footer">
+                                <div class="tags-posts-meta">
+                                    <a href="https://elijah.softhopper.studio/tag/business/">
+                                        <h4 class="tags-name">Business</h4>
+                                        <p class="tags-desc">10 posts</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tag-url">
+                                <a href="https://elijah.softhopper.studio/tag/business/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
+                            </div>
+                        </div>
+                        <div class="popular-tags col-md-4 col-lg-3">
+                            <div class="tag-thumb">
+                                <a href="https://elijah.softhopper.studio/tag/story/">
+                                    <img class="lazy" src="Elijah_files/tag_9.webp" alt="" width="75" height="75">
+                                </a>
+                            </div>
+                            <div class="tags-card-footer">
+                                <div class="tags-posts-meta">
+                                    <a href="https://elijah.softhopper.studio/tag/story/">
+                                        <h4 class="tags-name">Story</h4>
+                                        <p class="tags-desc">10 posts</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tag-url">
+                                <a href="https://elijah.softhopper.studio/tag/story/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
+                            </div>
+                        </div>
+                        <div class="popular-tags col-md-4 col-lg-3">
+                            <div class="tag-thumb">
+                                <a href="https://elijah.softhopper.studio/tag/news/">
+                                    <img class="lazy" src="Elijah_files/tag_1.webp" alt="" width="75" height="75">
+                                </a>
+                            </div>
+                            <div class="tags-card-footer">
+                                <div class="tags-posts-meta">
+                                    <a href="https://elijah.softhopper.studio/tag/news/">
+                                        <h4 class="tags-name">News</h4>
+                                        <p class="tags-desc">9 posts</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tag-url">
+                                <a href="https://elijah.softhopper.studio/tag/news/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
+                            </div>
+                        </div>
+                        <div class="popular-tags col-md-4 col-lg-3">
+                            <div class="tag-thumb">
+                                <a href="https://elijah.softhopper.studio/tag/lifestyle/">
+                                    <img class="lazy" src="Elijah_files/tag_7.webp" alt="" width="75" height="75">
+                                </a>
+                            </div>
+                            <div class="tags-card-footer">
+                                <div class="tags-posts-meta">
+                                    <a href="https://elijah.softhopper.studio/tag/lifestyle/">
+                                        <h4 class="tags-name">Lifestyle</h4>
+                                        <p class="tags-desc">9 posts</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tag-url">
+                                <a href="https://elijah.softhopper.studio/tag/lifestyle/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
+                            </div>
+                        </div>
+                        <div class="popular-tags col-md-4 col-lg-3">
+                            <div class="tag-thumb">
+                                <a href="https://elijah.softhopper.studio/tag/fashion/">
+                                    <img class="lazy" src="Elijah_files/tag_5.webp" alt="" width="75" height="75">
+                                </a>
+                            </div>
+                            <div class="tags-card-footer">
+                                <div class="tags-posts-meta">
+                                    <a href="https://elijah.softhopper.studio/tag/fashion/">
+                                        <h4 class="tags-name">Fashion</h4>
+                                        <p class="tags-desc">6 posts</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tag-url">
+                                <a href="https://elijah.softhopper.studio/tag/fashion/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
+                            </div>
+                        </div>
+            <div class="popular-tags col-lg-2 justify-content-center">
+                <a href="https://elijah.softhopper.studio/tags">
+                    <div class="tag-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62,23c-.9,0-1.79-.34-2.48-1.02l-2.12-2.12c-.66-.66-1.02-1.54-1.02-2.47s.36-1.82,1.02-2.47l7.02-7.02-1.16-1.16c-.96-.97-1.24-2.4-.72-3.66,.52-1.25,1.74-2.06,3.1-2.06h8.36c2.36,0,4.28,1.93,4.28,4.28V13.64c0,1.36-.81,2.58-2.06,3.1-1.25,.52-2.69,.24-3.65-.71l-1.07-1.07-7.02,7.02c-.68,.68-1.58,1.02-2.47,1.02ZM10.26,4c-.16,0-.27,.07-.33,.22-.06,.14-.03,.27,.08,.39l2.22,2.22c.28,.28,.44,.66,.44,1.06s-.16,.78-.44,1.06L4.14,17.03h0c-.13,.12-.14,.28-.14,.35s.02,.23,.14,.35l2.12,2.12c.2,.2,.51,.2,.71,0L15.05,11.78c.59-.59,1.54-.59,2.12,0l2.12,2.12c.11,.11,.24,.13,.38,.07,.15-.06,.22-.17,.22-.33V5.28c0-.71-.58-1.28-1.29-1.28H10.26ZM3.08,15.97h0Z"></path></svg>                        <h5>View All</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-wrapper">
+	<div class="container-xxl">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="site-main">
+					<div class="row gx-5" id="post-masonry" style="position: relative; height: 2193.45px;">
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 0%; top: 0px;">
+								<article class="post tag-idea tag-business tag-story">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around/">
+			<img srcset="Elijah_files/photo-1525026198548-4baa812f1183.jpg 300w, Elijah_files/photo-1525026198548-4baa812f1183_004.jpg 400w, Elijah_files/photo-1525026198548-4baa812f1183_004.jpg 500w, Elijah_files/photo-1525026198548-4baa812f1183_003.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1525026198548-4baa812f1183_002.jpg" class="post-card-image" alt="The trick to getting more done is to have the freedom to roam">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    
+			<a href="https://elijah.softhopper.studio/tag/idea/">Idea</a> <a href="https://elijah.softhopper.studio/tag/business/">Business</a> <a href="https://elijah.softhopper.studio/tag/story/">Story</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around/">
+				The trick to getting more done is to have the freedom to roam
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. 
+Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu 
+venenatis justo. Nullam felis augue, imperdiet at sodales a, 
+sollicitudin nec risus.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/iandooley/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-4.webp" alt="Ian Dooley" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">4 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 33.3333%; top: 0px;">
+								<article class="post tag-business tag-idea">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/has-day-he-wont-soon-forget-denny-backup-at-ready-to-use/">
+			<img srcset="Elijah_files/photo-1661956602139-ec64991b8b16_003.jpg 300w, Elijah_files/photo-1661956602139-ec64991b8b16_004.jpg 400w, Elijah_files/photo-1661956602139-ec64991b8b16_004.jpg 500w, Elijah_files/photo-1661956602139-ec64991b8b16_002.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1661956602139-ec64991b8b16.jpg" class="post-card-image" alt="Day He Won’t Soon Forget Denny Backup At Ready to Use!">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    
+			<a href="https://elijah.softhopper.studio/tag/business/">Business</a> <a href="https://elijah.softhopper.studio/tag/idea/">Idea</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/has-day-he-wont-soon-forget-denny-backup-at-ready-to-use/">
+				Day He Won’t Soon Forget Denny Backup At Ready to Use!
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Class aptent taciti sociosqu ad litora torquent per conubia 
+nostra, per inceptos himenaeos. Donec volutpat rhoncus quam, a feugiat 
+elit gravida eget. Curabitur id pharetra ligula. Integer porttitor 
+suscipit ante ac faucibus. Sed a enim non enim viverra pulvinar vel diam
+ ut lorem congue feugiat.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/william/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-2.webp" alt="William Smith" width="36" height="36">
+				</a>
+			</div>
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/logan/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-5.webp" alt="Logan Weaver" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">3 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 66.6666%; top: 0px;">
+								<article class="post tag-story tag-review tag-idea">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/apple-watch-series-9-reportedly-has-flat-sides-and-bigger/">
+			<img srcset="Elijah_files/photo-1609951894313-1390909edc11_004.jpg 300w, Elijah_files/photo-1609951894313-1390909edc11_003.jpg 400w, Elijah_files/photo-1609951894313-1390909edc11_003.jpg 500w, Elijah_files/photo-1609951894313-1390909edc11.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1609951894313-1390909edc11_002.jpg" class="post-card-image" alt="Apple Watch Series 9 Reportedly Has Flat Sides and Bigger">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    
+			<a href="https://elijah.softhopper.studio/tag/story/">Story</a> <a href="https://elijah.softhopper.studio/tag/review/">Review</a> <a href="https://elijah.softhopper.studio/tag/idea/">Idea</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/apple-watch-series-9-reportedly-has-flat-sides-and-bigger/">
+				Apple Watch Series 9 Reportedly Has Flat Sides and Bigger
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Integer nec mi cursus, blandit est et, auctor mauris. Aenean ex 
+metus, faucibus in mattis at, tincidunt eu dolor. Cras hendrerit massa 
+nec augue placerat rutrum. Sed facilisis massa enim, ac tempus diam 
+elementum sit amet.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/lucas/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-3.webp" alt="Lucas Noah" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">2 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 0%; top: 719.15px;">
+								<article class="post tag-idea tag-fashion">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/boxed-water-partners-with-to-consumer-creativity/">
+			<img srcset="Elijah_files/photo-1575305331117-0580726a1d34_003.jpg 300w, Elijah_files/photo-1575305331117-0580726a1d34_004.jpg 400w, Elijah_files/photo-1575305331117-0580726a1d34_004.jpg 500w, Elijah_files/photo-1575305331117-0580726a1d34_002.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1575305331117-0580726a1d34.jpg" class="post-card-image" alt="Boxed Water Partners With To Consumer Creativity.">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    
+			<a href="https://elijah.softhopper.studio/tag/idea/">Idea</a> <a href="https://elijah.softhopper.studio/tag/fashion/">Fashion</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/boxed-water-partners-with-to-consumer-creativity/">
+				Boxed Water Partners With To Consumer Creativity.
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Morbi a facilisis lectus. Ut eu dapibus risus, a interdum justo. 
+Vestibulum volutpat velit ac tellus mollis, sit amet sodales metus 
+elementum. Aliquam eu mi massa. Proin suscipit enim a pulvinar viverra.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/logan/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-5.webp" alt="Logan Weaver" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">4 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 33.3333%; top: 719.15px;">
+								<article class="post tag-news tag-story tag-lifestyle">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/will-the-democrats-be-able-to-online-gambling-ban-done/">
+			<img srcset="Elijah_files/photo-1616892026745-1ab3c69efe21_004.jpg 300w, Elijah_files/photo-1616892026745-1ab3c69efe21_003.jpg 400w, Elijah_files/photo-1616892026745-1ab3c69efe21_003.jpg 500w, Elijah_files/photo-1616892026745-1ab3c69efe21_002.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1616892026745-1ab3c69efe21.jpg" class="post-card-image" alt="Will The Democrats Be Able To Online Gambling Ban Done!">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    
+			<a href="https://elijah.softhopper.studio/tag/news/">News</a> <a href="https://elijah.softhopper.studio/tag/story/">Story</a> <a href="https://elijah.softhopper.studio/tag/lifestyle/">Lifestyle</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/will-the-democrats-be-able-to-online-gambling-ban-done/">
+				Will The Democrats Be Able To Online Gambling Ban Done!
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Nullam auctor nisi non tortor porta, id dapibus lectus rhoncus. 
+Vivamus lobortis posuere enim finibus sodales. Phasellus quis tellus 
+scelerisque, sagittis tortor et, maximus metus.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/james/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-6.webp" alt="James Barr" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">3 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 66.6666%; top: 719.15px;">
+								<article class="post tag-lifestyle tag-news">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/using-sports-ahead-your-competiti-on-the-best-coworking-space-for-technical-developers/">
+			<img srcset="Elijah_files/photo-1617939532846-e37a818ca02d_004.jpg 300w, Elijah_files/photo-1617939532846-e37a818ca02d.jpg 400w, Elijah_files/photo-1617939532846-e37a818ca02d.jpg 500w, Elijah_files/photo-1617939532846-e37a818ca02d_002.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1617939532846-e37a818ca02d_003.jpg" class="post-card-image" alt="Using Sports Ahead Competiti on The Best Coworking Space">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    
+			<a href="https://elijah.softhopper.studio/tag/lifestyle/">Lifestyle</a> <a href="https://elijah.softhopper.studio/tag/news/">News</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/using-sports-ahead-your-competiti-on-the-best-coworking-space-for-technical-developers/">
+				Using Sports Ahead Competiti on The Best Coworking Space
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Vestibulum vehicula dui venenatis neque tempor, accumsan iaculis 
+sapien ornare. Sed at ante porta, ullamcorper massa eu, ullamcorper 
+sapien. Donec pretium tortor augue. Integer egestas ut tellus sed 
+pretium. Nullam tristique augue ut mattis vulputate. Duis et lorem in 
+odio ultricies porttitor.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/jamie/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-7.webp" alt="Jamie Larason" width="36" height="36">
+				</a>
+			</div>
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/william/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-2.webp" alt="William Smith" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">3 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 0%; top: 1438.3px;">
+								<article class="post tag-idea tag-news tag-story">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/fasion-trends-and-li-edelkoort-the-culture-shock-special-report/">
+			<img srcset="Elijah_files/photo-1561357747-a5ebd644c2d6_004.jpg 300w, Elijah_files/photo-1561357747-a5ebd644c2d6_002.jpg 400w, Elijah_files/photo-1561357747-a5ebd644c2d6_002.jpg 500w, Elijah_files/photo-1561357747-a5ebd644c2d6_003.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1561357747-a5ebd644c2d6.jpg" class="post-card-image" alt="Fasion Trends and Li Edelkoort the Culture Shock Special Report">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    <span class="visibility-badge">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.445 9.333V6.667C5.445 2.985 8.38 0 12 0c3.62 0 6.554 2.985 6.554 6.667v2.666s2.622 1.214 2.622 6c0 4.787-3.815 8.667-8.52 8.667h-1.312c-4.706 0-8.52-3.88-8.52-8.667 0-4.786 2.621-6 2.621-6zm10.487 0V6.667c0-2.21-1.76-4-3.932-4-2.172 0-3.933 1.79-3.933 4v2.666h7.865z"></path></svg>
+    </span>
+			<a href="https://elijah.softhopper.studio/tag/idea/">Idea</a> <a href="https://elijah.softhopper.studio/tag/news/">News</a> <a href="https://elijah.softhopper.studio/tag/story/">Story</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/fasion-trends-and-li-edelkoort-the-culture-shock-special-report/">
+				Fasion Trends and Li Edelkoort the Culture Shock Special Report
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Quae in controversiam veniunt, de iis, si placet, disseramus. Iam 
+quae corporis sunt, ea nec auctoritatem cum animi partibus. Duo enim 
+genera quae erant, fecit tria. Et quod est munus, quod opus sapientiae.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/jamie/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-7.webp" alt="Jamie Larason" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">2 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 33.3333%; top: 1438.3px;">
+								<article class="post tag-creative tag-idea tag-review">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/vr-is-the-use-of-computer-technology-simulated-at-environment/">
+			<img srcset="Elijah_files/photo-1620712943543-bcc4688e7485_004.jpg 300w, Elijah_files/photo-1620712943543-bcc4688e7485_003.jpg 400w, Elijah_files/photo-1620712943543-bcc4688e7485_003.jpg 500w, Elijah_files/photo-1620712943543-bcc4688e7485_002.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1620712943543-bcc4688e7485.jpg" class="post-card-image" alt="VR Use of Computer Technology Simulated at Environment.">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    
+			<a href="https://elijah.softhopper.studio/tag/creative/">Creative</a> <a href="https://elijah.softhopper.studio/tag/idea/">Idea</a> <a href="https://elijah.softhopper.studio/tag/review/">Review</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/vr-is-the-use-of-computer-technology-simulated-at-environment/">
+				VR Use of Computer Technology Simulated at Environment.
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Curabitur elementum nulla sapien, vel suscipit turpis convallis 
+quis. Morbi sagittis non quam at aliquet. Suspendisse ut diam erat. 
+Donec sed faucibus magna. Vestibulum eget erat ultrices.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/james/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-6.webp" alt="James Barr" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">2 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+							<div class="col-md-6 col-lg-4 post-loop" style="position: absolute; left: 66.6666%; top: 1438.3px;">
+								<article class="post tag-lifestyle tag-story">
+	<figure class="thumb-wrap">
+		<a href="https://elijah.softhopper.studio/my-childhood-was-full-of-wonderful-memories/">
+			<img srcset="Elijah_files/photo-1616952248800-9d62f964033c.jpg 300w, Elijah_files/photo-1616952248800-9d62f964033c_004.jpg 400w, Elijah_files/photo-1616952248800-9d62f964033c_004.jpg 500w, Elijah_files/photo-1616952248800-9d62f964033c_002.jpg 600w" sizes="(min-width: 1400px) 1400px, 92vw" src="Elijah_files/photo-1616952248800-9d62f964033c_003.jpg" class="post-card-image" alt="My childhood was full of wonderful memories which never share">
+		</a>
+	</figure>
+	<!--./ thumb-wrap -->
+	
+	<div class="content-entry-wrap">
+		<div class="entry-category">
+			    <span class="visibility-badge">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.445 9.333V6.667C5.445 2.985 8.38 0 12 0c3.62 0 6.554 2.985 6.554 6.667v2.666s2.622 1.214 2.622 6c0 4.787-3.815 8.667-8.52 8.667h-1.312c-4.706 0-8.52-3.88-8.52-8.667 0-4.786 2.621-6 2.621-6zm10.487 0V6.667c0-2.21-1.76-4-3.932-4-2.172 0-3.933 1.79-3.933 4v2.666h7.865z"></path></svg>
+    </span>
+			<a href="https://elijah.softhopper.studio/tag/lifestyle/">Lifestyle</a> <a href="https://elijah.softhopper.studio/tag/story/">Story</a>
+		</div>
+		
+		<h3 class="entry-title">
+			<a href="https://elijah.softhopper.studio/my-childhood-was-full-of-wonderful-memories/">
+				My childhood was full of wonderful memories which never share
+			</a>
+		</h3>
+
+		<div class="entry-summary">
+			<p>Quibus autem in rebus tanta obscuratio non fit, fieri tamen 
+potest, ut id ipsum, quod interest, non sit magnum. Ita fit ut, quanta 
+differentia est in principiis naturalibus, tanta sit in finibus bonorum 
+malorumque dissimilitudo.</p>
+		</div>
+
+		<div class="entry-user">
+			<div class="thumb">
+				<a href="https://elijah.softhopper.studio/author/lucas/" class="static-avatar">
+					<img class="author-profile-image" src="Elijah_files/author-3.webp" alt="Lucas Noah" width="36" height="36">
+				</a>
+			</div>
+			<span class="speperator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect y="11" width="24" height="2" rx="1"></rect></svg></span>
+			<span class="loop-reading-time">2 min read</span>
+		</div>
+	</div>
+	<!--./ content-entry-wrap -->
+</article>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center mt-4">
+				<div class="load-more-btn-area">
+	<a href="#" class="load-more-btn js-load-posts">Load More</a>
+</div>
+<nav class="navigation paging-navigation text-center pd-t-5 d-none">
+    <span class="page-number">Page 1 of 4</span>
+        <a class="older-posts" href="https://elijah.softhopper.studio/page/2/">Older Posts →</a>
+</nav>
+			</div>
+		</div>
+	</div>
+</section>
+<!--~./ end main wrapper ~-->
+		<section class="recomaded-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">In Case you missed it!</h2>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-6 col-sm-4 col-lg-2">
+    <article class="post tag-idea tag-business tag-story image-bg recomaded-posts">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around/">
+                <img class="post-card-image" src="Elijah_files/photo-1525026198548-4baa812f1183_004.jpg" loading="lazy" alt="The trick to getting more done is to have the freedom to roam">
+            </a>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+				    <a href="https://elijah.softhopper.studio/tag/idea/">Idea</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around/">
+                    The trick to getting more done is to have the freedom to roam
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+                <div class="col-6 col-sm-4 col-lg-2">
+    <article class="post tag-story tag-review tag-idea image-bg recomaded-posts">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/apple-watch-series-9-reportedly-has-flat-sides-and-bigger/">
+                <img class="post-card-image" src="Elijah_files/photo-1609951894313-1390909edc11_003.jpg" loading="lazy" alt="Apple Watch Series 9 Reportedly Has Flat Sides and Bigger">
+            </a>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+				    <a href="https://elijah.softhopper.studio/tag/story/">Story</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/apple-watch-series-9-reportedly-has-flat-sides-and-bigger/">
+                    Apple Watch Series 9 Reportedly Has Flat Sides and Bigger
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+                <div class="col-6 col-sm-4 col-lg-2">
+    <article class="post tag-news tag-story tag-lifestyle image-bg recomaded-posts">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/will-the-democrats-be-able-to-online-gambling-ban-done/">
+                <img class="post-card-image" src="Elijah_files/photo-1616892026745-1ab3c69efe21_003.jpg" loading="lazy" alt="Will The Democrats Be Able To Online Gambling Ban Done!">
+            </a>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+				    <a href="https://elijah.softhopper.studio/tag/news/">News</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/will-the-democrats-be-able-to-online-gambling-ban-done/">
+                    Will The Democrats Be Able To Online Gambling Ban Done!
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+                <div class="col-6 col-sm-4 col-lg-2">
+    <article class="post tag-idea tag-news tag-story image-bg recomaded-posts">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/fasion-trends-and-li-edelkoort-the-culture-shock-special-report/">
+                <img class="post-card-image" src="Elijah_files/photo-1561357747-a5ebd644c2d6_002.jpg" loading="lazy" alt="Fasion Trends and Li Edelkoort the Culture Shock Special Report">
+            </a>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+				    <a href="https://elijah.softhopper.studio/tag/idea/">Idea</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/fasion-trends-and-li-edelkoort-the-culture-shock-special-report/">
+                    Fasion Trends and Li Edelkoort the Culture Shock Special Report
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+                <div class="col-6 col-sm-4 col-lg-2">
+    <article class="post tag-lifestyle tag-design tag-idea image-bg recomaded-posts">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/i-have-my-own-definition-of-minimalism/">
+                <img class="post-card-image" src="Elijah_files/photo-1542353436-312f0e1f67ff.jpg" loading="lazy" alt="I have my own definition of minimalism">
+            </a>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+				    <a href="https://elijah.softhopper.studio/tag/lifestyle/">Lifestyle</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/i-have-my-own-definition-of-minimalism/">
+                    I have my own definition of minimalism
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+                <div class="col-6 col-sm-4 col-lg-2">
+    <article class="post tag-news tag-story tag-creative image-bg recomaded-posts">
+        <figure class="thumb-wrap">
+            <a href="https://elijah.softhopper.studio/300-free-tools-services-for-startup-entrepreneurs/">
+                <img class="post-card-image" src="Elijah_files/photo-1485217988980-11786ced9454.jpg" loading="lazy" alt="300 Free Tools &amp; Services for Startup Entrepreneurs">
+            </a>
+        </figure>
+        <!--./ thumb-wrap -->
+        
+        <div class="content-entry-wrap">
+            <!--./ entry-category -->
+            <div class="entry-category">
+				    <a href="https://elijah.softhopper.studio/tag/news/">News</a>
+            </div>
+            <h3 class="entry-title">
+                <a href="https://elijah.softhopper.studio/300-free-tools-services-for-startup-entrepreneurs/">
+                    300 Free Tools &amp; Services for Startup Entrepreneurs
+                </a>
+            </h3>
+        </div>
+        <!--./ content-entry-wrap -->
+    </article>
+</div>
+        </div>
+    </div>
+</section>
+
+
+
+        <footer class="site-footer">
+	<div class="footer-top">
+		<div class="container-xxl">
+			<div class="row align-items-center">
+				<div class="col-lg-6 text-center text-lg-start">
+					<!-- f-logo -->
+					<div class="f-logo">
+							<a href="https://elijah.softhopper.studio/">
+									<img src="Elijah_files/light-logo.webp" alt="Elijah Demo" class="dark-logo" width="135" height="35">
+								<img src="Elijah_files/logo.webp" alt="Elijah Demo" class="white-logo" width="135" height="35">
+								<img src="Elijah_files/hero_element_2.webp" alt="Element" width="35" height="35" class="footer-elements">
+							</a>
+					</div>
+					
+				</div>
+				<div class="col-lg-6 text-center text-lg-end mt-4 mt-md-0">
+					<a href="https://elijah.softhopper.studio/contact/" class="button-contact">Contact Us <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
+				</div>
+			</div>
+			<div class="devider"></div>
+		</div>
+	</div>
+	<div class="footer-widget-area">
+		<div class="container-xxl">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+	<aside class="widget widget_links">
+		<h2 class="widget-title">Quick Links</h2>
+		<div class="widget-content">
+			
+<div class="elijah-nav-wrapper"> 
+        <ul class="nav" role="menu">
+                <li class="nav-archive-page" role="menuitem">
+                    <a href="https://elijah.softhopper.studio/archives/">Archive Page</a>
+                </li>
+                <li class="nav-contact-page" role="menuitem">
+                    <a href="https://elijah.softhopper.studio/contact/">Contact Page</a>
+                </li>
+                <li class="nav-signin-page" role="menuitem">
+                    <a href="https://elijah.softhopper.studio/signin/">Signin Page</a>
+                </li>
+                <li class="nav-signup-page" role="menuitem">
+                    <a href="https://elijah.softhopper.studio/signup/">Signup Page</a>
+                </li>
+                <li class="nav-free-account-page" role="menuitem">
+                    <a href="https://elijah.softhopper.studio/demo-free-member/">Free Account Page</a>
+                </li>
+                <li class="nav-paid-account-page" role="menuitem">
+                    <a href="https://elijah.softhopper.studio/demo-paid-member/">Paid Account Page</a>
+                </li>
+        </ul>
+</div>
+		</div>
+	</aside>
+</div>
+						<div class="col-lg-3 col-md-6">
+			<aside class="widget widget_tags">
+				<h2 class="widget-title">Tags</h2>
+				<div class="widget-content">
+					<ul>
+					        <li><a href="https://elijah.softhopper.studio/tag/idea/">Idea</a></li>
+					        <li><a href="https://elijah.softhopper.studio/tag/business/">Business</a></li>
+					        <li><a href="https://elijah.softhopper.studio/tag/story/">Story</a></li>
+					        <li><a href="https://elijah.softhopper.studio/tag/news/">News</a></li>
+					        <li><a href="https://elijah.softhopper.studio/tag/lifestyle/">Lifestyle</a></li>
+					        <li><a href="https://elijah.softhopper.studio/tag/fashion/">Fashion</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+				<div class="col-lg-1 col-md-6">
+
+</div>				<div class="col-lg-5 col-md-6">
+	<aside class="widget widget_subscribe">
+		<h2 class="subscribe-title mb-3">Join the newsletter and read the new post first.</h2>
+		<div class="widget-content">
+			<p>Get the email newsletter and unlock access to members-only contents</p>
+			<div class="subscribe-form">
+				<!-- Subscribe form -->
+				<form class="dv-form" data-members-form="subscribe">
+    <div class="input-group">
+        <input class="subscribe-email form-control" data-members-email="" placeholder="Email Address" type="email">
+        <button class="subscribe-btn" type="submit">
+            Subscribe
+        </button>
+    </div>
+    <div class="message-success">
+        Great! Check your inbox and click the link to confirm your subscription.
+    </div>
+    <div class="message-error">
+        Please enter a valid email address!
+    </div>
+</form>			</div>
+		</div>
+	</aside>
+</div>			</div>
+		</div>
+	</div>
+	<!--~./ end footer widgets area ~-->
+
+	<div class="footer-bottom-area">
+		<div class="container-xxl">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="copyright-text text-center text-lg-start">
+							<p><a href="https://elijah.softhopper.studio/">Elijah Demo</a> © 2023. All rights reserved.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="text-center text-lg-end">
+						<div class="social-content">
+    <a href="https://www.facebook.com/ghost" target="_blank" rel="noopener"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"></path></svg></a>
+    <a href="https://twitter.com/ghost" target="_blank" rel="noopener"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg></a>
+    <a class="rss-button" href="https://feedly.com/i/subscription/feed/https://elijah.softhopper.studio/rss/" title="RSS" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path></svg></a>
+    <a href="#" id="kickstarter"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.168 0c-3.2 0-5.797 2.579-5.797 5.758v12.484C1.371 21.42 3.968 24 7.168 24c1.981 0 3.716-.978 4.768-2.479l.794.79c2.26 2.245 5.943 2.245 8.203 0a5.724 5.724 0 001.696-4.075 5.724 5.724 0 00-1.696-4.074l-2.182-2.168 2.182-2.156a5.724 5.724 0 001.696-4.074 5.724 5.724 0 00-1.696-4.074c-2.26-2.246-5.942-2.246-8.203 0l-.794.789A5.797 5.797 0 007.168 0Z"></path></svg></a>
+    <a href="#" id="vimeo"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"></path></svg></a>
+</div>					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--~./ end footer bottom area ~-->
+</footer>    </div>
+
+    <!--search overlay content-->
+<div class="overlay-content">
+    <div class="overlay-close"></div>
+    <div class="search-area search-overly  d-flex justify-content-center aligh-items-center flex-column">
+        <div class="cus-container">
+            <div class="search-input-area d-flex align-items-center">
+                <input type="text" id="search-input" class="form-control" placeholder="type your keywords...">
+                <small class="esc">ESC</small>
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></span>
+                <div class="bar-dismiss"><span class="close-icons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg></span></div>
+            </div>
+            <!-- search result content -->
+            <div class="search-result">
+                <div class="custom">
+                    <h2 class="no-result"><span>0</span> results found in this keyword</h2>
+                    <div id="search-full-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+    <a href="#top" id="scroll-top" class="topbutton btn-hide more-top">
+        <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919px, 307.919px; stroke-dashoffset: 307.919px;"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="cuurentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="18" y1="11" x2="12" y2="5"></line>
+            <line x1="6" y1="11" x2="12" y2="5"></line>
+        </svg>
+    </a>
+
+    <script>
+        var serachContentApi = "https://elijah.softhopper.studio/ghost/api/v3/content/posts/?key=" + window.contentApiKey + "&limit=all&fields=id,title,excerpt,feature_image,custom_excerpt,url,published_at&formats=plaintext&include=tags";
+        
+        var pagination_next_page_number       = '2',
+            pagination_available_pages_number = '4';
+    </script>
+
+    <script src="Elijah_files/jquery.js"></script>
+    <script src="Elijah_files/plugin.js"></script>
+    <script src="Elijah_files/imagesloaded.pkgd.min.js"></script>
+    <script src="Elijah_files/isotope.pkgd.min.js"></script>
+    <script src="Elijah_files/packery-mode.pkgd.min.js"></script>
+    <script src="Elijah_files/tocbot.min.js"></script>
+    <script src="Elijah_files/fslightbox.js"></script>
+
+    <script src="Elijah_files/main.js"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+        var success = getParameterByName('success');
+        var layouts = getParameterByName('layout');
+
+        // Show 505 Error Page
+        if( layouts === '505' ) {
+            document.getElementById("error-404").src = '/assets/images/error-505.webp';
+        }
+
+        function setCookie(cname, cvalue) {
+            const d = new Date();
+            d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
+            let expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        
+        function getCookie(cname) {
+            let name = cname + "=";
+            let ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+            }
+            return "";
+        }
+
+        function delete_cookie(name) {
+            document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+
+        var get_layout = getCookie('layout_mode');
+        if( get_layout == 'dark' || layouts == 'dark' ) {
+            document.querySelector('.switcher').classList.add('active');
+            document.querySelector('body').classList.add('dark-layout');
+        } else {
+            document.querySelector('.switcher').classList.remove('active');
+            document.querySelector('body').classList.remove('dark-layout');
+        }
+
+    </script>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.post-details',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3, h4',
+            ignoreSelector: '.kg-product-card-title, .kg-signup-card-heading, .kg-signup-card-subheading',
+        });
+    </script>
+
+    
+    
+
+    
+
+
+
+<div id="ghost-portal-root"></div><div id="sodo-search-root"></div><iframe name="__privateStripeMetricsController7000" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" src="Elijah_files/m-outer-27c67c0d52761104439bb051c7856ab1.html" aria-hidden="true" tabindex="-1" style="border: medium !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe></body></html>
